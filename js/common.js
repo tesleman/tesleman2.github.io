@@ -31,7 +31,7 @@ $(".carousel-services").on('initialized.owl.carousel', function() {
 });
 
 $(".carousel-services").owlCarousel({
-	
+	dots: false,
 	nav: true,
 	smartSpeed: 700,
 	navText: ['<i class="fa fa-angle-double-left"></i>','<i class="fa fa-angle-double-right"></i>'],
@@ -65,20 +65,23 @@ $('.carousel-services-composition .h3').each(function(){
 	ths.html(ths.html().replace(/(\S+)\s*$/, '<span>$1</span>'));
 });
 
+
 //	resizevindow
 // function onResize(){
 	
 // }onResize();
 // window.onResize = function(){onResize()};
 
-
- 
+$('section .h2').each(function(){
+	var ths = $(this);
+	ths.html(ths.html().replace(/^\W*([\w-]+)/, '<span>$1</span>'));
 });
-$(window).on('load', function(){
+});
+// $(window).on('load', function(){
 	
-	$('.preloader').delay(500).fadeOut('slow');
+// 	$('.preloader').delay(1000).fadeOut('slow');
 	
-	}
-	)
+// 	}
+// 	)
 
 
